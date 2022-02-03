@@ -14,15 +14,15 @@ Sort-visualizer is a C program to visualize the sorting process of an array for 
 
 1. CALL `sortVis* *name* = createVisualizer()` BEFORE SORTING PROCESS;
 
-2. CALL `updateVisualizer()` **EVERY** TIME YOUR ALGORITHM (MIGHT) SWAP A PAIR OF ELEMENTS;
+2. CALL `updateVisualizer(sortVis* obj)` **EVERY** TIME YOUR ALGORITHM (MIGHT) SWAP A PAIR OF ELEMENTS;
 
-3. CALL `verifyVisualizer()` TO VERIFY THE SORT RESULT;
+3. CALL `verifyVisualizer(sortVis* obj,unsigned int method)` TO VERIFY THE SORT RESULT;
 
 ​		0 = Descending , 1 = Ascending order
 
 ​		CALLEE RETURN THE ID OF FIRST WRONG SORTED ELEMENT
 
-3. CALL `killVisualizer()` WHEN SORTING PROCESS IS OVER;
+3. CALL `killVisualizer(sortVis* obj)` WHEN SORTING PROCESS IS OVER;
 
     
 
